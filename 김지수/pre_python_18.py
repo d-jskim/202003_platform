@@ -7,10 +7,21 @@ file = ['exit.py',hi.py','playdata.hwp',intro.jpg']
 file = ['exit',hi','playdata',intro']
 """
 
-print("hello World")
+
+file = ['exit.py', 'hi.py','playdata.hwp','intro.jpg']
 
 
-#file = ['exit.py', 'hi.py','playdata.hwp','intro.jpg']
+def removeExt(list):
+    newFile = []
+    for ele in list:
+        index = ele.find('.')
+        #print(ele[0:index])
+        newFile.append(ele[0:index])
+    
+    return newFile
+    
+
+print("file =", removeExt(file))
 
 
-print("hello")
+
