@@ -12,7 +12,7 @@ def sum():
     #1부터 100까지 합 -> range(100) 100번의 for loop
     for i in range(100):
         number = i + 1 #1부터 시작
-        sum = sum + number 
+        sum += number 
         
         if sum > 1000: 
             return number
