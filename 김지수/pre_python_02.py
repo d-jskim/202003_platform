@@ -4,7 +4,7 @@ input1 = float(input("숫자를 입력하시오: "))
 inputOp = input("연산자를 입력하시요(+, -, *, /): ")
 input2 = float(input("숫자를 한 번 더 입력하시오: "))
 
-
+# calculation
 def cal(operator, a, b):
 
     if operator == "+":
