@@ -2,7 +2,6 @@
 
 # prime numbers: 소수
 primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
-#print("primeNumbers[{}] = {}".format(i, divisor))
 
 # a list for common factors
 commonFactors = []
