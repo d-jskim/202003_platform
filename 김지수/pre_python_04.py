@@ -11,7 +11,7 @@ height = int(input("높이를 정수로 입력하시오: "))
 
 print("삼각형의 넓이: ", triangleArea(base, height))
 
-
+#commit test
 
 
 
