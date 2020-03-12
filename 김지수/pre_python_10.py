@@ -11,7 +11,8 @@ def factorial(no):
     for i in reversed(range(no)):
         number = i + 1
         result *= number
-        
+
+    #return the result of factorial cal  
     return result
 
 
