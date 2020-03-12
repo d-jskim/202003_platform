@@ -2,7 +2,7 @@
 숫자를 입력하세요 : 5
     ★
    ★★
-  ★★★
+  ★★★  
  ★★★★
 ★★★★★
  ★★★★
@@ -11,4 +11,13 @@
     ★
 """
 
-# 파이썬 for 문에서 -1씩 감소...?
+def drawDia(n):
+    for i in range(n):
+        print(' '*(n-(i+1)) + '★'*(i+1), end='')
+        print()
+    for j in reversed(range(n)):
+        print(' '*(n-j) + '★'*j, end='')
+        print()
+
+no = int(input("숫자를 입력하세요: "))
+drawDia(no)
