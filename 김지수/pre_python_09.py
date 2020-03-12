@@ -7,3 +7,27 @@
 21~40 : D
 0~20 : F
 """
+
+
+
+def grade(score):
+
+    if score >= 81 and score <=100:
+        print("A")
+        return
+    elif score >= 61 and score <=80:
+        print("B")
+        return
+    elif score >= 41 and score <=60:
+        print("C")
+        return
+    elif score >= 21 and score <=40:
+        print("D")
+        return
+    else:
+        print("F")
+        return
+
+inputScore = float(input("점수를 입력하시오: "))
+
+grade(inputScore)
