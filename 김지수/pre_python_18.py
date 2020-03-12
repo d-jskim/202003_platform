@@ -10,7 +10,7 @@ file = ['exit',hi','playdata',intro']
 
 file = ['exit.py', 'hi.py','playdata.hwp','intro.jpg']
 
-
+# a function to remove file extention
 def removeExt(list):
     newFile = []
     for ele in list:
