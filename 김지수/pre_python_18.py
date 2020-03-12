@@ -7,4 +7,10 @@ file = ['exit.py',hi.py','playdata.hwp',intro.jpg']
 file = ['exit',hi','playdata',intro']
 """
 
-file = ['exit.py',hi.py','playdata.hwp',intro.jpg']
+print("hello World")
+
+
+#file = ['exit.py', 'hi.py','playdata.hwp','intro.jpg']
+
+
+print("hello")
