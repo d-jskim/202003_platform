@@ -14,14 +14,14 @@ def game369():
         numStr = str(number)
         numList = list(numStr)
 
-        if "3" in numList:
+        if number % 5 == 0 :
+            gameList.append("아자")
+        elif "3" in numList:
             gameList.append("짝")
         elif "6" in numList:
             gameList.append("짝")
         elif "9" in numList:
             gameList.append("짝")
-        elif number % 5 == 0 :
-            gameList.append("아자")
         else: 
             gameList.append(numStr);
         
