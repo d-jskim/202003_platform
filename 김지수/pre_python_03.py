@@ -12,7 +12,7 @@ def dice():
 
 def diceGame():
 
-    # p1과 p2의 input값이 유효하지 않을 때 유하한 값을 얻을 때까지 반복하는 코드를 어떻게 효율적으로 쓸 수 있는지...?
+    # p1과 p2의 input값이 유효하지 않을 때 유한한 값을 얻을 때까지 반복하는 코드를 어떻게 효율적으로 쓸 수 있는지...?
     # while input != '': print("please press the enter key") -> 무한루프......
     
     input_p1 = input('Hello p1! Please, press the enter key.')
@@ -41,13 +41,13 @@ def diceGame():
     print("P2's number: {}".format(p2))
 
     if p1 > p2:
-        print("P1 wins the round".format(p1))
+        print("P1 won the round".format(p1))
         return
     elif p1 < p2:
-        print("P2 wins the round".format(p2))
+        print("P2 won the round".format(p2))
         return
     else:
-        print("The round is a draw.")
+        print("The round ended in a draw.")
         return
 
 
