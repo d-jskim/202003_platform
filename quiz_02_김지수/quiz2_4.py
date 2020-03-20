@@ -45,7 +45,7 @@ class Membership_card:
 
     def charge(self, inputValue):
         self.balance += inputValue
-        print("충전 후 잔액이 {}원입니다.".format(self.balance))
+        print("{}이 충전되었습니다.".format(self.balance))
 
     def consume(self, price, place, discount):
         discountRate = discount / 100
