@@ -15,7 +15,20 @@ True
 '''
 
 
-def test():
-    print("test git connection")
 
-test()
+def is_palindrome(str):
+    listStr = list(str)
+
+    low = 0
+    high = len(listStr) - 1
+
+    while low < high:
+        if listStr[low] == listStr[high]:
+            low = low + 1
+            high = high - 1
+        else: return "False"
+    return "True"
+
+    
+print(is_palindrome("radio"))
+print(is_palindrome("토마토"))
