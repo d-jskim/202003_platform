@@ -37,18 +37,18 @@ class Card:
         print("충전 후 잔액이 {}원입니다.".format(self.balance))
 
     
-    def consume(self, payment, place):
+    def consume(self, price, place):
 
-        if self.balance >= payment:
+        if self.balance >= price:
             if place == '마트':
-                self.balance -= payment
-                print("마트에서 {}원 사용했습니다.".format(payment))
+                self.balance -= price
+                print("마트에서 {}원 사용했습니다.".format(price))
                 return
             elif place == '영화관':
                 DISCOUNT_RATE = 0.2 #20%
-                totalPayment = payment * (1 - DISCOUNT_RATE)
-                self.balance -= totalPayment
-                print("영화관에서 {}원 사용했습니다.".format(totalPayment))
+                payment = price * (1 - DISCOUNT_RATE)
+                self.balance -= payment
+                print("영화관에서 {}원 사용했습니다.".format(payment))
             else: print("'마트' 또는 '영화관'을 정확하게 입력해 주십시오.")
         else: print("잔액이 부족합니다")
         
