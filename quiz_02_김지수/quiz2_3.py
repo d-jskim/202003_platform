@@ -54,7 +54,6 @@ class Card:
 
             print("현재 잔액은 {}원입니다".format(self.balance))
 
-
 card = Card()
 card.charge(20000)
 card.consume(3000,'마트')
