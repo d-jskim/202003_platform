@@ -35,7 +35,6 @@ multi_card.print()
     Multi_card(Membership_card, Mart_card, Transportation_card)
 """
 
-
 class Membership_card:
 
     def __init__(self):
