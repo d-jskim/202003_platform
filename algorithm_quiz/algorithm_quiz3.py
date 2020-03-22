@@ -15,7 +15,7 @@ print(bubble_sort(list))
 
 list=[4,3,2,1,8,7,5,10,11,16,21,6]
 
-print("정상적으로 실행합니다.")
+
 
 def bubble_sort(list):
 
