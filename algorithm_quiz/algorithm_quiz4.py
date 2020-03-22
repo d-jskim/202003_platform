@@ -18,21 +18,27 @@ print(greedy())
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
 
+def bubble_sort_asc(list):
 
-
-print("working")
-
+    for length in range(len(list), 0, -1):
+        for j in range(length-1):
+            if list[j] < list[j+1]:
+                list[j], list[j+1] = list[j+1], list[j]
+    
+    return list
     
 
 def greedy():
     
     price = int(input("액수를 입력하시오:"))
-    
     coinType = input("동전의 종류를 입력하시오(예시: 100 50 10):")
-    tempList = coinType.split()
-    coinList = list(map(int, tempList))
 
-    noCoinList = []
+    tempList = coinType.split() # string을 공백 기준으로 split
+    intList = list(map(int, tempList)) # 숫자 형변환: string to int
+
+    coinList = bubble_sort_asc(intList) # 오름차순으로 정렬
+
+    noCoinList = [] 
     dividend = price
 
     for i in range(len(coinList)):
