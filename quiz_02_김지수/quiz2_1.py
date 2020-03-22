@@ -32,3 +32,5 @@ def is_palindrome(str):
     
 print(is_palindrome("radio"))
 print(is_palindrome("토마토"))
+
+#resubmit
