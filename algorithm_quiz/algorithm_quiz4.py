@@ -17,3 +17,40 @@ print(greedy())
 동전의 종류 :  100 50 10
 100원 동전 10개, 50원 동전 1개, 10원 동전 0개
 '''
+
+
+
+print("working")
+
+    
+
+def greedy():
+    
+    price = int(input("액수를 입력하시오:"))
+    
+    coinType = input("동전의 종류를 입력하시오(예시: 100 50 10):")
+    tempList = coinType.split()
+    coinList = list(map(int, tempList))
+
+    noCoinList = []
+    dividend = price
+
+    for i in range(len(coinList)):
+        noCoinList.append(dividend // coinList[i])
+        dividend = dividend % coinList[i]
+        
+    index = 0
+    while index < len(noCoinList):
+        print("{}원 동전 {}".format(coinList[index], noCoinList[index]), end='')
+        print(", ", end='')
+        index += 1
+
+    # "0, None"을 없애는 방법........? 
+
+
+print(greedy())
+
+
+
+
+
