@@ -14,3 +14,29 @@ print(select_sort(list))
 [1, 2, 3, 6, 7, 8, 10, 21]
 
 '''
+
+list=[6,2,3,7,8,10,21,1]
+
+def findMin(list):
+    min = list[0]
+    minIndex = 0
+
+    for i in range(1, len(list)):
+        if list[i] < min:
+            min = list[i]
+            minIndex = i
+    
+    return minIndex
+
+def select_sort(list):
+    newList = []
+
+    for i in range(len(list)):
+        minIndex = findMin(list)
+        newList.append(list[minIndex])
+        list.pop(minIndex)
+    
+    return newList
+
+print(select_sort(list))
+

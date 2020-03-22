@@ -26,19 +26,15 @@ card.print()
 
 
 class Card:   
-
     def __init__(self):
-
         self.balance = 0
     
     def charge(self, inputValue):
-
         self.balance += inputValue
         print("충전 후 잔액이 {}원입니다.".format(self.balance))
 
     
     def consume(self, price, place):
-
         if self.balance >= price:
             if place == '마트':
                 self.balance -= price
@@ -52,7 +48,6 @@ class Card:
             else: print("'마트' 또는 '영화관'을 정확하게 입력해 주십시오.")
         else: print("잔액이 부족합니다")
         
-
     def print(self):
         print("현재 잔액은 {}원입니다".format(self.balance))
 

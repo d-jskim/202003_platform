@@ -36,12 +36,9 @@ multi_card.print()
 """
 
 class Membership_card:
-
     def __init__(self):
         print("멤버십카드가 발급되었습니다.")
         self.balance = 0
-
-
 
     def charge(self, inputValue):
         self.balance += inputValue
@@ -60,18 +57,14 @@ class Membership_card:
 
 
 class Movie_card(Membership_card):
-
     def consume(self, price, place):
         Membership_card.consume(self, price, place, 20)
 
-
 class Mart_card(Membership_card):
-
     def consume(self, price, place):
         Membership_card.consume(self, price, place, 10)
     
 class Transportation_card(Membership_card):
-
     def consume(self, price, place):
         Membership_card.consume(self, price, place, 10)
 
@@ -79,17 +72,13 @@ class Transportation_card(Membership_card):
 
 class Multi_card(Movie_card, Mart_card, Transportation_card):
     def __init__(self):
-        print("멀티카드가 발급되었습니다.")
+        print("카드가 발급되었습니다.")
         self.balance = 0
-
-    
+  
     def consume(self, price, place):
-        if place == "영화관":
-            Movie_card.consume(self, price, place)
-        elif place == "마트":
-            Mart_card.consume(self, price, place)
-        elif place == "교통":
-            Transportation_card.consume(self, price, place)
+        if place == "영화관": Movie_card.consume(self, price, place)
+        elif place == "마트": Mart_card.consume(self, price, place)
+        elif place == "교통": Transportation_card.consume(self, price, place)
         else: print("이 카드를 사용할 수 없습니다.")
 
 
